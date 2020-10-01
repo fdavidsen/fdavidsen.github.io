@@ -1,0 +1,68 @@
+[
+	{
+		"id": 6,
+		"name": "Current Weather",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/current-weather/master/static/assets/preview.png",
+		"technologies": "Bootstrap, Flask, REST API",
+		"author": "Frederic Davidsen",
+		"description": "Tells you what's the weather currently like. There is additional information about the weather, coordinates of the city, and wind condition.",
+		"github": "https://github.com/fdavidsen/current-weather",
+		"preview": "https://current-weather-fd.herokuapp.com/"
+	},
+	{
+		"id": 5,
+		"name": "Movies Search",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/movies-search/master/img/preview.jpg",
+		"technologies": "Materialize, jQuery, REST API",
+		"author": "Frederic Davidsen",
+		"description": "Pulls out 10 movies on every search and check out the details of each movie. The details cover the plot, actors, director, and many others.",
+		"github": "https://github.com/fdavidsen/movies-search",
+		"preview": "https://fdavidsen.github.io/movies-search/"
+	},
+	{
+		"id": 4,
+		"name": "Company Profile",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/company-profile/master/img/preview.jpg",
+		"technologies": "Materialize",
+		"author": "Frederic Davidsen",
+		"description": "Simple design and light-weight webpage for a company profile. It helps your company to exhibit its achievement i.e. portfolio, clients.",
+		"github": "https://github.com/fdavidsen/company-profile",
+		"preview": "https://fdavidsen.github.io/company-profile/"
+	},
+	{
+		"id": 3,
+		"name": "Olshop",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/olshop/master/public/img/preview.png",
+		"technologies": "Bootstrap, jQuery, CodeIgniter, MySQL",
+		"author": "Frederic Davidsen",
+		"description": "Website to manage creation and modification of online shop's contents that support multiple admins. It helps an online shop to maintain its products while customers are easy to look for certain products there. Customers are unnecessary to sign in to give a like to certain products.",
+		"github": "https://github.com/fdavidsen/olshop",
+		"preview": null
+	},
+	{
+		"id": 2,
+		"name": "Covid-19 EDA",
+		"category": "Data Science",
+		"picture": "https://cdn.pixabay.com/photo/2020/06/17/06/11/virus-5308335_960_720.jpg",
+		"technologies": "Scikit-learn, Pandas, Matplotlib, Altair",
+		"author": "Frederic Davidsen et al.",
+		"description": "Introduction to the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE and explore it using some foundational packages in the Scientific Python Data Science stack.",
+		"github": "https://github.com/boratonAJ/WQU-ML_PROJECT",
+		"preview": null
+	},
+	{
+		"id": 1,
+		"name": "Daily Horoscope",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/horoscope/master/assets/img/preview.jpg",
+		"technologies": "Bootstrap, jQuery, REST API, PWA",
+		"author": "Frederic Davidsen",
+		"description": "Daily horoscope of 12 Astrology Zodiac Signs with the addition of current week, month, and year.",
+		"github": "https://github.com/fdavidsen/horoscope",
+		"preview": "https://fdavidsen.github.io/horoscope/"
+	}
+]

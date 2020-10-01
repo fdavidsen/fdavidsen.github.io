@@ -1,0 +1,92 @@
+[
+	{
+		"name": "Python",
+		"logo": "python.jpg",
+		"percentage": "90"
+	},
+	{
+		"name": "Scikit-learn",
+		"logo": "scikit-learn.png",
+		"percentage": "75"
+	},
+	{
+		"name": "Pandas",
+		"logo": "pandas.png",
+		"percentage": "70"
+	},
+	{
+		"name": "NumPy",
+		"logo": "numpy.png",
+		"percentage": "50"
+	},
+	{
+		"name": "Matplotlib",
+		"logo": "matplotlib.png",
+		"percentage": "45"
+	},
+	{
+		"name": "Flask",
+		"logo": "flask.png",
+		"percentage": "45"
+	},
+	{
+		"name": "HTML",
+		"logo": "html.png",
+		"percentage": "70"
+	},
+	{
+		"name": "CSS",
+		"logo": "css.png",
+		"percentage": "65"
+	},
+	{
+		"name": "Bootstrap",
+		"logo": "bootstrap.jpg",
+		"percentage": "80"
+	},
+	{
+		"name": "Materialize",
+		"logo": "materialize.png",
+		"percentage": "60"
+	},
+	{
+		"name": "JavaScript",
+		"logo": "javascript.png",
+		"percentage": "60"
+	},
+	{
+		"name": "jQuery",
+		"logo": "jquery.jpg",
+		"percentage": "80"
+	},
+	{
+		"name": "PHP",
+		"logo": "php.png",
+		"percentage": "60"
+	},
+	{
+		"name": "CodeIgniter",
+		"logo": "codeigniter.png",
+		"percentage": "80"
+	},
+	{
+		"name": "MySQL",
+		"logo": "mysql.png",
+		"percentage": "60"
+	},
+	{
+		"name": "Git",
+		"logo": "git.png",
+		"percentage": "60"
+	},
+	{
+		"name": "REST API",
+		"logo": "rest-api.png",
+		"percentage": "60"
+	},
+	{
+		"name": "PWA",
+		"logo": "pwa.png",
+		"percentage": "30"
+	}
+]
