@@ -1,4 +1,5 @@
-const baseURL = 'https://fdavidsen.github.io/';
+// const baseURL = 'https://fdavidsen.github.io/';
+const baseURL = 'http://localhost/NON%20PHP/startbootstrap-agency-gh-pages/';
 /*!
     * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
     * Copyright 2013-2020 Start Bootstrap
