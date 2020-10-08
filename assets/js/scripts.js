@@ -1,4 +1,3 @@
-const baseURL = 'https://fdavidsen.github.io/';
 /*!
     * Start Bootstrap - Agency v6.0.2 (https://startbootstrap.com/template-overviews/agency)
     * Copyright 2013-2020 Start Bootstrap
