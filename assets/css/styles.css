@@ -10655,6 +10655,11 @@ section#contact form#contactForm .info .item a {
   text-align: left;
   margin: 0.275rem 0;
 }
+#technologies-box .technology-name #percentage {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
 #technologies-box .progress {
   position: relative;
   height: 4px;
