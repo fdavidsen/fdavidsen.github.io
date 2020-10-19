@@ -2474,7 +2474,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #212529;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   background-color: #ffca28;
   border-color: #fc9f35;
   transition: 0.2s ease-in;
