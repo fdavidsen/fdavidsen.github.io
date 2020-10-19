@@ -10214,7 +10214,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/home-bg.jpg");
+  background-image: url("../img/background/home.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10259,7 +10259,7 @@ header.masthead .masthead-heading {
   }
 }
 .portfolio {
-  background-image: url("../img/portfolio-bg.jpg");
+  background-image: url("../img/background/portfolio.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -10578,7 +10578,7 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-image: url("../img/contact-bg.jpg");
+  background-image: url("../img/background/contact.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
