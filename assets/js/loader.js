@@ -21,7 +21,7 @@ $.ajax({
         // index.html
         for (let i = 0; i < 6; i++) {
             let item = result[i];
-            $('.portfolio #main .row').append('<div class="col-lg-4 col-sm-6"><div class="portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal' + item.id + '"><div class="portfolio-hover"><div class="portfolio-hover-content text-center"><div class="portfolio-caption-heading">' + item.name + '</div><div class="portfolio-caption-subheading text-muted">' + item.category + '</div></div></div><img class="img-fluid" src="' + item.picture + '" alt="' + item.name + '"></a></div></div>');
+            $('.portfolio #main .row').append('<div class="col-lg-4 col-sm-6"><div class="portfolio-item"><a class="portfolio-link" data-toggle="modal" href="#portfolioModal' + item.id + '"><div class="portfolio-hover"><div class="portfolio-hover-content text-center"><div class="portfolio-caption-heading">' + item.name + '</div><div class="portfolio-caption-subheading text-muted">' + item.category + '</div></div></div><img class="img-fluid" src="' + item.picture + '" alt="' + item.name + '" /></a></div></div>');
         }
 
         result.forEach(function(item) {

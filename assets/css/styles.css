@@ -10258,18 +10258,36 @@ header.masthead .masthead-heading {
     margin-bottom: 1rem;
   }
 }
+.portfolio {
+  background-image: url("../img/portfolio-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio.py-5 {
+  background: #f8f9fa;
+}
 .portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
   margin-right: auto;
 }
 .portfolio .col-lg-4{
-  padding: 0.2rem;
+  padding: 0.3rem;
+}
+@media (max-width: 576px) {
+  .portfolio .col-lg-4{
+    padding: 0.5rem;
+  }
 }
 .portfolio .portfolio-item img {
   width: 100%;
   height: 15.625rem;
   object-fit: cover;
+}
+.portfolio #main .portfolio-item img {
+  border-radius: 0.25rem;
 }
 .portfolio .portfolio-item .portfolio-link {
   position: relative;
@@ -10295,7 +10313,7 @@ header.masthead .masthead-heading {
   color: white;
 }
 .portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 .portfolio #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 1;
@@ -10682,11 +10700,11 @@ section#contact form#contactForm .info .item a {
 }
 
 .show-projects {
-  color: #111;
-  font-size: 11px;
-  font-weight: 400;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
-  margin-top: 1.5rem;
+  margin-top: 5rem;
   position: relative;
   float: right;
   border: 1px solid #e2e2e2;
@@ -10699,8 +10717,8 @@ section#contact form#contactForm .info .item a {
 }
 .show-projects:hover {
   text-decoration: none;
-  color: #000 !important;
-  border-color: #ccc;
+  color: #fed136 !important;
+  border-color: #fc9f35;
 }
 
 .tabs-icon {
