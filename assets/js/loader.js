@@ -4,7 +4,7 @@ $.ajax({
     type: 'GET',
     success: function(result) {
         result.forEach(function(item) {
-            $('#technologies-box').append('<div class="col-md-6 col-lg-4"><div class="card technology-item text-center"><div class="row no-gutters"><div class="col-4"><img src="assets/img/technologies/' + item.logo + '" class="technology-logo" alt="' + item.name + '"></div><div class="col-8"><h5 class="card-title technology-name">' + item.name + '<span id="percentage">(' + item.percentage + '%)</span></h5><div class="progress"><div class="determinate" style="width: ' + item.percentage + '%"></div></div></div></div></div></div>');
+            $('#technologies-box').append('<div class="col-md-6 col-lg-4"><div class="card technology-item text-center"><div class="row no-gutters"><div class="col-4"><img src="assets/img/technology/' + item.logo + '" class="technology-logo" alt="' + item.name + '"></div><div class="col-8"><h5 class="card-title technology-name">' + item.name + '<span id="percentage">(' + item.percentage + '%)</span></h5><div class="progress"><div class="determinate" style="width: ' + item.percentage + '%"></div></div></div></div></div></div>');
         });
     }
 });
