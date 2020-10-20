@@ -2486,6 +2486,9 @@ fieldset:disabled a.btn {
   background-color: #fec810;
   border-color: #fec503;
 }
+#contact .btn-primary {
+  font-weight: 900;
+}
 #contact .btn-primary:hover {
   color: #fed136;
   background-color: transparent;
