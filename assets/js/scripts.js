@@ -55,3 +55,30 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
+
+
+
+// Changing URL on scroll
+$(function () {
+    var currentHash = "#";
+    var blocksArr = $('section');
+
+    $(document).scroll(function () {
+        var currentTop = window.pageYOffset / 1;
+
+        for (var i = 0; i < blocksArr.length; i++) {
+            var hash = $(blocksArr[i]).attr('id');
+            var currentElementTop = $(blocksArr[i]).offset().top - 72.5;
+
+            if (currentElementTop < currentTop && currentTop < currentElementTop + $(blocksArr[i]).height() && currentHash != hash) {
+                if (history.pushState) {
+                    history.pushState(null, null, '#' + hash);
+                } else {
+                    location.hash = '#' + hash;
+                }
+
+                currentHash = hash;
+            }
+        }
+    });
+});

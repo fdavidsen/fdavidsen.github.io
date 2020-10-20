@@ -10211,6 +10211,9 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+section#home {
+  padding: 0;
+}
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
