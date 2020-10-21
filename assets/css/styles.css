@@ -10021,11 +10021,12 @@ p {
   line-height: 1.75;
 }
 
-section.portfolio {
-  padding-bottom: 9rem;
-}
 .page-section {
   padding: 5rem 0;
+}
+section#services,
+section.portfolio {
+  padding-bottom: 9rem;
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10266,6 +10267,22 @@ header.masthead .masthead-heading {
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  section#services .col-6 {
+    padding: 0.25rem 1rem;
+  }
+}
+section#services .frame {
+  padding: 2rem 0 1rem;
+  border-radius: 1rem;
+  transition: 0.2s ease-out;
+}
+section#services .frame:hover {
+  background-color: #fff176;
+  cursor: pointer;
+}
+
 .portfolio {
   background-image: url("../img/background/portfolio.jpg");
   background-size: cover;

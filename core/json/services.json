@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"title": "Clean Code",
+		"icon": "code",
+		"link": "https://cvuorinen.net/2014/04/what-is-clean-code-and-why-should-you-care/",
+		"description": "Clean code can be read and enhanced by a developer other than its original author. With understandability comes readability, changeability, extensibility, and maintainability."
+	},
+	{
+		"id": 2,
+		"title": "Debugging",
+		"icon": "bug",
+		"link": "https://en.wikipedia.org/wiki/Debugging",
+		"description": "Process of detecting and removing of existing and potential errors or bugs in a software code that can cause it to behave unexpectedly or crash."
+	},
+	{
+		"id": 3,
+		"title": "Problem Solving",
+		"icon": "brain",
+		"link": "https://en.wikipedia.org/wiki/Problem_solving",
+		"description": "Using generic or ad hoc methods in an orderly manner to find solutions to problems, especially in computer science."
+	},
+	{
+		"id": 4,
+		"title": "Responsive Design",
+		"icon": "laptop",
+		"link": "https://en.wikipedia.org/wiki/Responsive_web_design",
+		"description": "Approach to web design that makes web pages render well on a variety of devices and window or screen sizes."
+	}
+]

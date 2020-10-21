@@ -9,6 +9,23 @@ $.ajax({
     }
 });
 
+
+
+$.ajax({
+    url: baseURL + 'core/json/services.json',
+    dataType: 'JSON',
+    type: 'GET',
+    success: function(result) {
+        result.forEach(function(item) {
+            $('#services .row').append('<div class="col-6 col-md-3"><div class="frame" data-toggle="modal" data-target="#servicesModal' + item.id + '"><span class="fa-stack fa-3x"><i class="fas fa-circle fa-stack-2x text-primary"></i><i class="fas fa-' + item.icon + ' fa-stack-1x fa-inverse"></i></span><h5 class="my-3">' + item.title + '</h5></div></div>');
+
+            $('#services-modal').append('<div class="modal fade" id="servicesModal' + item.id + '" tabindex="-1" role="dialog" aria-labelledby="servicesModalTitle' + item.id + '" aria-hidden="true"><div class="modal-dialog modal-dialog-centered" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="servicesModalTitle' + item.id + '">' + item.title + '</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">' + item.description + '</div><div class="modal-footer"><a class="btn btn-dark text-white rounded-0" href="' + item.link + '" target="_blank">Read more</a></div></div></div></div>');
+        });
+    }
+});
+
+
+
 let total = 0;
 $.ajax({
     url: baseURL + 'core/json/projects.json',
