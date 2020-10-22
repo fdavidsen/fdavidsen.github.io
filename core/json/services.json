@@ -4,7 +4,7 @@
 		"title": "Clean Code",
 		"icon": "code",
 		"link": "https://cvuorinen.net/2014/04/what-is-clean-code-and-why-should-you-care/",
-		"description": "Clean code can be read and enhanced by a developer other than its original author. With understandability comes readability, changeability, extensibility, and maintainability."
+		"description": "Clean code can be read and enhanced by a developer other than its original author. With understandability comes readability, changeability, extensibility, and maintainability. Even bad code can function. But if code isn’t clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn’t have to be that way."
 	},
 	{
 		"id": 2,
