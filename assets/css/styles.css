@@ -10161,18 +10161,12 @@ img::-moz-selection {
 @media (max-width: 768px) {
   #mainNav .dropdown-menu {
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
-  #mainNav .dropdown a.btn {
-    margin: 1rem;
-  }
-  #mainNav a.btn.left {
-    margin-left: 1rem;
-    margin-right: 1.5rem;
-  }
+  #mainNav a.btn.left,
   #mainNav a.btn.right {
-    margin-right: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
