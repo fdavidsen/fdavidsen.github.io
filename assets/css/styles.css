@@ -10145,6 +10145,36 @@ img::-moz-selection {
     height: 1.5rem;
   }
 }
+#mainNav .dropdown:hover > .dropdown-menu {
+  display: flex;
+  margin-top: -1px;
+}
+#mainNav .dropdown a.btn {
+  margin: 0.5rem;
+}
+#mainNav a.btn.left {
+  margin-left: 1.5rem;
+}
+#mainNav a.btn.right {
+  margin-right: 1.5rem;
+}
+@media (max-width: 768px) {
+  #mainNav .dropdown-menu {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  #mainNav .dropdown a.btn {
+    margin: 1rem;
+  }
+  #mainNav a.btn.left {
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+  }
+  #mainNav a.btn.right {
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+  }
+}
 
 .portfolio #mainNav {
   padding-top: 1rem;
