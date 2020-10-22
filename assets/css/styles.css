@@ -10161,10 +10161,9 @@ img::-moz-selection {
 @media (max-width: 768px) {
   #mainNav .dropdown-menu {
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
-  #mainNav a.btn.left,
-  #mainNav a.btn.right {
+  #mainNav .dropdown a.btn {
     margin-left: 0;
     margin-right: 0;
   }
