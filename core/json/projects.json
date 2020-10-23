@@ -56,13 +56,13 @@
 	},
 	{
 		"id": 3,
-		"name": "Olshop",
+		"name": "Online Shop",
 		"category": "Web Development",
-		"picture": "https://raw.githubusercontent.com/fdavidsen/olshop/master/public/img/preview.png",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/online-shop/master/public/img/preview.png",
 		"technologies": "Bootstrap, jQuery, CodeIgniter, MySQL",
 		"author": "Frederic Davidsen",
 		"description": "Website to manage creation and modification of online shop's contents that support multiple admins. It helps an online shop to maintain its products while customers are easy to look for certain products there. Customers are unnecessary to sign in to give a like to certain products.",
-		"github": "https://github.com/fdavidsen/olshop",
+		"github": "https://github.com/fdavidsen/online-shop",
 		"preview": null
 	},
 	{
