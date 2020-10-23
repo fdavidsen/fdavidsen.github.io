@@ -10228,7 +10228,7 @@ img::-moz-selection {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
+  #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -10288,6 +10288,20 @@ header.masthead .masthead-heading {
     font-weight: 700;
     line-height: 2.5rem;
     margin-bottom: 1rem;
+  }
+}
+
+section#about {
+  background-color: #f8f9fa;
+}
+#technologies-box .card {
+  cursor: default;
+}
+@media (min-width: 992px) {
+  #technologies-box .card:hover {
+    box-shadow: 0 0 8px 4px #fff176;
+    border: none;
+    transition: 0.2s ease-in;
   }
 }
 
