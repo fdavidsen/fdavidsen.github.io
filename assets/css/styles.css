@@ -10432,6 +10432,9 @@ section#services .frame:hover {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+.portfolio-modal .modal-body img {
+  box-shadow: 0 0 8px 3px #ffca28;
+}
 .portfolio-modal .btn-preview {
   margin-top: 1rem;
   margin-left: 0;
