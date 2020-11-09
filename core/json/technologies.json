@@ -25,6 +25,11 @@
 		"percentage": "45"
 	},
 	{
+		"name": "Seaborn",
+		"logo": "seaborn.jpg",
+		"percentage": "45"
+	},
+	{
 		"name": "Flask",
 		"logo": "flask.png",
 		"percentage": "45"
