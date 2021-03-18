@@ -12,12 +12,9 @@ $.ajax({
                 <img src="assets/img/technology/${ item.logo }" class="technology-logo" alt="${ item.name }">
               </div>
               <div class="col-8">
-                <h5 class="card-title technology-name">
-                  ${ item.name }
-                  <span id="percentage">(${ item.percentage }%)</span>
-                </h5>
+                <h5 class="card-title technology-name">${ item.name }</h5>
                 <div class="progress">
-                  <div class="determinate" style="width: ${ item.percentage }%"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="${ item.percentage }" aria-valuemin="0" aria-valuemax="100">${ item.percentage }%</div>
                 </div>
               </div>
             </div>
@@ -101,8 +98,8 @@ $.ajax({
       `);
     }
 
+    // portfolio.html
     result.forEach(function(item) {
-      // portfolio.html
       $('.portfolio #portfolio .row').append(`
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="portfolio-item">
@@ -171,26 +168,4 @@ $.ajax({
       `);
     });
   }
-});
-
-$('.tabs-icon').on('click', 'li', function() {
-  $(this).addClass('active').siblings().removeClass('active');
-  const tab = $(this).data('tab').split('-').join(' ');
-  let hidden = 0;
-
-  $('.portfolio #portfolio .row').children().each(function() {
-    if (tab == 'all') {
-      $(this).fadeIn();
-    } else {
-      const type = $(this).find('.portfolio-caption-subheading').html().toLowerCase();
-      if (type == tab) {
-        $(this).fadeIn();
-      } else {
-        $(this).hide();
-        hidden += 1;
-      }
-    }
-  });
-
-  $('#total').html(total - hidden);
 });
