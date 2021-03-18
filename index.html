@@ -98,64 +98,69 @@
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Contact</h2>
         </div>
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form name="contact-form" id="contact-form" novalidate="novalidate">
           <div class="row align-items-stretch my-5">
             <div class="col-lg-7 right-offset-lg-1">
-                <div class="form-group mb-md-0">
-                  <input class="form-control" id="name" type="text" placeholder="Name *" required="required" data-validation-required-message="Please enter your name." autocomplete="off">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group mb-md-0">
-                  <input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Please enter your email address." autocomplete="off">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group mb-md-0">
-                  <input class="form-control" id="phone" type="tel" placeholder="WhatsApp Number *" required="required" data-validation-required-message="Please enter your phone number." autocomplete="off">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group form-group-textarea mb-md-0">
-                  <textarea class="form-control" id="message" placeholder="Message *" required="required" data-validation-required-message="Please enter a message." autocomplete="off"></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="text-center">
-                <div id="success"></div>
-                <button class="btn btn-primary btn-block text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+              <div class="form-group mb-md-0">
+                <input type="text" name="name" placeholder="Name *" class="form-control" required="required" data-validation-required-message="Please enter your name." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group mb-md-0">
+                <input type="email" name="email" placeholder="Email *" class="form-control" required="required" data-validation-required-message="Please enter your email address." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group mb-md-0">
+                <input type="tel" name="phone" placeholder="WhatsApp Number *" class="form-control" required="required" data-validation-required-message="Please enter your WhatsApp number." autocomplete="off">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group form-group-textarea mb-md-0">
+                <textarea name="message" placeholder="Message *" class="form-control" required="required" data-validation-required-message="Please enter a message." autocomplete="off"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="text-center">
+                <div id="status"></div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-send text-uppercase">Send Message</button>
+                <button type="button" class="btn btn-primary btn-block btn-loading text-uppercase d-none" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Sending
+                </button>
               </div>
             </div>
-            <div class="info col-lg-4 text-center mt-lg-0">
-              <div class="item">
-                <h6>LOCATION</h6>
-                <p>Medan, Indonesia</p>
-              </div>
-              <div class="item">
-                <h6>EMAIL</h6>
-                <p>f.davidsen19@gmail.com</p>
-              </div>
-              <div class="item mt-5">
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/frederic-davidsen-7b83a11b0/" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <!-- GitHub -->
-                <a href="https://github.com/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-github"></i></a>
-                <!-- Kaggle -->
-                <a href="https://www.kaggle.com/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-kaggle"></i></a>
-                <!-- Acclaim -->
-                <a href="https://www.youracclaim.com/users/frederic-davidsen/badges" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fas fa-angle-double-up"></i></a>
-                <!-- WhatsApp -->
-                <a href="https://wa.me/+6282362361344?text=Hello+Frederic%2C+I%27m+hoping+you+can+help+me+with+..." class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <!-- Telegram -->
-                <a href="https://t.me/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/frederic_davidsen/" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-instagram"></i></a>
-                <!-- LINE -->
-                <a href="https://line.me/ti/p/JzBh8C4OPz" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-line"></i></a>
-                <!-- Messenger -->
-                <a href="https://m.me/frederic.davidsen.35" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <!-- Twitter -->
-                <a href="https://twitter.com/messages/compose?recipient_id=1275679200561725442" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-twitter"></i></a>
-              </div>
+          </form>
+          <div class="info col-lg-4 text-center mt-lg-0">
+            <div class="item">
+              <h6>LOCATION</h6>
+              <p>Medan, Indonesia</p>
+            </div>
+            <div class="item">
+              <h6>EMAIL</h6>
+              <p>f.davidsen19@gmail.com</p>
+            </div>
+            <div class="item mt-5">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/frederic-davidsen-7b83a11b0/" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <!-- GitHub -->
+              <a href="https://github.com/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-github"></i></a>
+              <!-- Kaggle -->
+              <a href="https://www.kaggle.com/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-kaggle"></i></a>
+              <!-- Acclaim -->
+              <a href="https://www.youracclaim.com/users/frederic-davidsen/badges" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fas fa-angle-double-up"></i></a>
+              <!-- WhatsApp -->
+              <a href="https://wa.me/+6282362361344?text=Hello+Frederic%2C+I%27m+hoping+you+can+help+me+with+..." class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <!-- Telegram -->
+              <a href="https://t.me/fdavidsen" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/frederic_davidsen/" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-instagram"></i></a>
+              <!-- LINE -->
+              <a href="https://line.me/ti/p/JzBh8C4OPz" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-line"></i></a>
+              <!-- Messenger -->
+              <a href="https://m.me/frederic.davidsen.35" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <!-- Twitter -->
+              <a href="https://twitter.com/messages/compose?recipient_id=1275679200561725442" class="btn btn-dark btn-social m-lg-2" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
-        </form>
+        </div>
         <footer class="footer mt-5">Copyright © Frederic Davidsen 2020</footer>
       </div>
     </section>

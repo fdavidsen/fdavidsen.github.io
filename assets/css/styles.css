@@ -2481,15 +2481,7 @@ fieldset:disabled a.btn {
   border-color: #fc9f35;
   transition: 0.2s ease-in;
 }
-.btn-primary:hover {
-  color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
-}
-#contact .btn-primary {
-  font-weight: 900;
-}
-#contact .btn-primary:hover {
+.btn-primary:hover, .btn-primary:disabled {
   color: #fed136;
   background-color: transparent;
   border-color: #fed136;
@@ -2499,11 +2491,6 @@ fieldset:disabled a.btn {
   background-color: #fec810;
   border-color: #fec503;
   box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
-}
-.btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
@@ -10024,7 +10011,7 @@ p {
 .page-section {
   padding: 5rem 0;
 }
-section#services,
+#services,
 section.portfolio {
   padding-bottom: 9rem;
 }
@@ -10246,7 +10233,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/background/home.jpg");
+  background-image: url(../img/background/home.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10303,22 +10290,22 @@ header.masthead .masthead-heading {
 }
 
 @media (max-width: 768px) {
-  section#services .col-6 {
+  #services .col-6 {
     padding: 0.25rem 1rem;
   }
 }
-section#services .frame {
+#services .frame {
   padding: 2rem 0 1rem;
   border-radius: 1rem;
   transition: 0.2s ease-out;
 }
-section#services .frame:hover {
+#services .frame:hover {
   background-color: #fff176;
   cursor: pointer;
 }
 
 .portfolio {
-  background-image: url("../img/background/portfolio.jpg");
+  background-image: url(../img/background/portfolio.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -10639,21 +10626,21 @@ section#services .frame:hover {
   margin-bottom: 0;
 }
 
-section#contact {
-  background-image: url("../img/background/contact.jpg");
+#contact {
+  background-image: url(../img/background/contact.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
 }
-section#contact .section-heading {
+#contact .section-heading {
   color: #fff;
 }
-section#contact form#contactForm .form-group {
+#contact #contact-form .form-group {
   margin-bottom: 1.5rem;
 }
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
+#contact #contact-form .form-group input,
+#contact #contact-form .form-group textarea {
   color: #eee;
   padding: 0.625rem;
   font-size: 0.75rem;
@@ -10661,40 +10648,43 @@ section#contact form#contactForm .form-group textarea {
   background: rgba(20, 20, 20, 0.5);
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
-section#contact form#contactForm .form-group input.form-control {
+#contact #contact-form .form-group input.form-control {
   height: auto;
 }
-section#contact form#contactForm .form-group-textarea {
+#contact #contact-form .form-group-textarea {
   min-height: 3.75rem;
 }
-section#contact form#contactForm .form-group-textarea textarea {
+#contact #contact-form .form-group-textarea textarea {
   height: 100%;
   min-height: 10rem;
 }
-section#contact form#contactForm p.help-block {
+#contact #contact-form p.help-block {
   margin: 0;
 }
-section#contact form#contactForm ::-webkit-input-placeholder {
+#contact #contact-form .spinner-border {
+  margin-bottom: 0.125rem;
+}
+#contact #contact-form ::-webkit-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
 }
-section#contact form#contactForm :-moz-placeholder {
+#contact #contact-form :-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
 }
-section#contact form#contactForm ::-moz-placeholder {
+#contact #contact-form ::-moz-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
 }
-section#contact form#contactForm :-ms-input-placeholder {
+#contact #contact-form :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
 }
-section#contact form#contactForm .info {
+#contact #contact-form .info {
   width: 100%;
   color: #eee;
   padding: 3.5rem;
@@ -10703,10 +10693,10 @@ section#contact form#contactForm .info {
   background: rgba(20, 20, 20, 0.5);
   border: 1px solid rgba(250, 250, 250, 0.2);
 }
-section#contact form#contactForm .info .item h6 {
+#contact #contact-form .info .item h6 {
   margin-bottom: 0;
 }
-section#contact form#contactForm .info .item a {
+#contact #contact-form .info .item a {
   margin: 1rem;
 }
 
