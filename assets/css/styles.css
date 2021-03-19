@@ -10253,8 +10253,13 @@ header.masthead .masthead-heading {
 }
 /* Cursor on typing animation */
 .masthead-subheading span > .wrap {
-  border-right: 0.08em solid #666;
+  border-right: 0.08rem solid;
   padding-right: 0.25rem;
+  animation: animated-cursor 600ms steps(30, end) infinite;
+}
+@keyframes animated-cursor{
+  from { border-right-color: #666; }
+  to { border-right-color: transparent; }
 }
 
 @media (min-width: 768px) {
