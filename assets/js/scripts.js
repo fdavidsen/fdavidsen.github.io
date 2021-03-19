@@ -101,7 +101,7 @@ TxtRotate.prototype.tick = function() {
 window.onload = function() {
   var elements = document.querySelectorAll('.masthead-subheading span');
   var toRotate = ["Data Scientist", "Web Developer"];
-  var period = 1000;
+  var period = 2000;
   elements.forEach(function(element) {
     new TxtRotate(element, toRotate, period);
   });
