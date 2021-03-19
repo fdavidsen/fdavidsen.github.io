@@ -1,102 +1,82 @@
 [
 	{
-		"name": "Python",
-		"logo": "python.jpg",
+		"name": "Python",		
 		"percentage": "90"
 	},
 	{
-		"name": "Scikit-learn",
-		"logo": "scikit-learn.png",
+		"name": "Scikit-learn",		
 		"percentage": "75"
 	},
 	{
-		"name": "Pandas",
-		"logo": "pandas.png",
+		"name": "Pandas",		
 		"percentage": "70"
 	},
 	{
-		"name": "NumPy",
-		"logo": "numpy.png",
+		"name": "NumPy",		
 		"percentage": "50"
 	},
 	{
-		"name": "Matplotlib",
-		"logo": "matplotlib.png",
+		"name": "Matplotlib",		
 		"percentage": "45"
 	},
 	{
-		"name": "Seaborn",
-		"logo": "seaborn.jpg",
+		"name": "Seaborn",		
 		"percentage": "45"
 	},
 	{
-		"name": "Flask",
-		"logo": "flask.png",
+		"name": "Flask",		
 		"percentage": "40"
 	},
 	{
-		"name": "HTML",
-		"logo": "html.png",
+		"name": "HTML",		
 		"percentage": "90"
 	},
 	{
-		"name": "CSS",
-		"logo": "css.png",
+		"name": "CSS",		
 		"percentage": "80"
 	},
 	{
-		"name": "Bootstrap",
-		"logo": "bootstrap.jpg",
+		"name": "Bootstrap",		
 		"percentage": "90"
 	},
 	{
-		"name": "Materialize",
-		"logo": "materialize.png",
+		"name": "Materialize",		
 		"percentage": "50"
 	},
 	{
-		"name": "JavaScript",
-		"logo": "javascript.png",
+		"name": "JavaScript",		
 		"percentage": "75"
 	},
 	{
-		"name": "jQuery",
-		"logo": "jquery.jpg",
+		"name": "jQuery",		
 		"percentage": "85"
 	},
 	{
-		"name": "PHP",
-		"logo": "php.png",
+		"name": "PHP",		
 		"percentage": "60"
 	},
 	{
-		"name": "Laravel",
-		"logo": "laravel.png",
+		"name": "Laravel",		
 		"percentage": "70"
 	},
 	{
-		"name": "CodeIgniter",
-		"logo": "codeigniter.png",
+		"name": "CodeIgniter",		
 		"percentage": "50"
 	},
 	{
-		"name": "MySQL",
-		"logo": "mysql.png",
+		"name": "MySQL",		
 		"percentage": "65"
 	},
 	{
-		"name": "Git",
-		"logo": "git.png",
+		"name": "Git",		
 		"percentage": "60"
 	},
 	{
-		"name": "REST API",
-		"logo": "rest-api.png",
+		"name": "REST API",		
 		"percentage": "60"
 	},
 	{
-		"name": "PWA",
-		"logo": "pwa.png",
+		"name": "PWA",		
 		"percentage": "30"
 	}
 ]

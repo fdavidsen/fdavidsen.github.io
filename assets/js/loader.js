@@ -4,12 +4,14 @@ $.ajax({
   dataType: 'JSON',
   success: function(result) {
     result.forEach(function(item) {
+      const logo = item.name.toLowerCase().split(' ').join('-') + '.png';
+
       $('#technologies-box').append(`
         <div class="col-md-6 col-lg-4">
           <div class="card technology-item text-center">
             <div class="row no-gutters">
               <div class="col-4">
-                <img src="assets/img/technology/${ item.logo }" class="technology-logo" alt="${ item.name }">
+                <img src="assets/img/technology/${ logo }" class="technology-logo" alt="${ item.name }">
               </div>
               <div class="col-8">
                 <h5 class="card-title technology-name">${ item.name }</h5>
