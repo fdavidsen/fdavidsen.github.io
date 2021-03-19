@@ -1,5 +1,16 @@
 [
 	{
+		"id": 9,
+		"name": "Album of High School Memories",
+		"category": "Web Development",
+		"picture": "https://drive.google.com/uc?export=view&id=1Mo7gmUzXgwCBBGxw_HOYyEPnXL8goxzU",
+		"technologies": "Bootstrap, jQuery",
+		"author": "Frederic Davidsen",
+		"description": "Album of my high school memories",
+		"github": "https://github.com/fdavidsen/five",
+		"preview": "https://fdavidsen.github.io/five/"
+	},
+	{
 		"id": 8,
 		"name": "Group Projects",
 		"category": "Data Science",
@@ -15,7 +26,7 @@
 		"name": "Personal Projects",
 		"category": "Data Science",
 		"picture": "https://cdn.pixabay.com/photo/2017/06/04/20/23/binary-2372130_960_720.jpg",
-		"technologies": "Scikit-learn, Pandas",
+		"technologies": "Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn",
 		"author": "Frederic Davidsen",
 		"description": "This is a collection of my simple personal projects. I made them for fun and learning purposes.",
 		"github": "https://github.com/fdavidsen/Personal-Data-Science-Projects",
