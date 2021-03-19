@@ -32,37 +32,37 @@
 	{
 		"name": "Flask",
 		"logo": "flask.png",
-		"percentage": "45"
+		"percentage": "40"
 	},
 	{
 		"name": "HTML",
 		"logo": "html.png",
-		"percentage": "70"
+		"percentage": "90"
 	},
 	{
 		"name": "CSS",
 		"logo": "css.png",
-		"percentage": "65"
+		"percentage": "80"
 	},
 	{
 		"name": "Bootstrap",
 		"logo": "bootstrap.jpg",
-		"percentage": "80"
+		"percentage": "90"
 	},
 	{
 		"name": "Materialize",
 		"logo": "materialize.png",
-		"percentage": "60"
+		"percentage": "50"
 	},
 	{
 		"name": "JavaScript",
 		"logo": "javascript.png",
-		"percentage": "60"
+		"percentage": "75"
 	},
 	{
 		"name": "jQuery",
 		"logo": "jquery.jpg",
-		"percentage": "80"
+		"percentage": "85"
 	},
 	{
 		"name": "PHP",
@@ -70,14 +70,19 @@
 		"percentage": "60"
 	},
 	{
+		"name": "Laravel",
+		"logo": "laravel.png",
+		"percentage": "70"
+	},
+	{
 		"name": "CodeIgniter",
 		"logo": "codeigniter.png",
-		"percentage": "80"
+		"percentage": "50"
 	},
 	{
 		"name": "MySQL",
 		"logo": "mysql.png",
-		"percentage": "60"
+		"percentage": "65"
 	},
 	{
 		"name": "Git",
