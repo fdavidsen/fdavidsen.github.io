@@ -2478,7 +2478,6 @@ fieldset:disabled a.btn {
   font-weight: 600;
   letter-spacing: 0.5px;
   background-color: #ffca28;
-  border-color: #fc9f35;
   transition: 0.2s ease-in;
 }
 .btn-primary:hover, .btn-primary:disabled {
@@ -10218,6 +10217,7 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+
 section#home {
   padding: 0;
 }
@@ -10235,7 +10235,7 @@ header.masthead {
 header.masthead .masthead-avatar {
   width: 15rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10281,33 +10281,59 @@ header.masthead .masthead-heading {
   }
 }
 
-#technologies-box .card {
+#about .mark {
+  background-color: #fff176;
+  color: #21252A;
+}
+#about .mark:hover {
+  background-color: #fed136;
+  text-decoration: none;
+  color: #21252A;
+}
+#about .btn-primary {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0;
+}
+#about .btn-primary:hover {
+  border-radius: 0;
+  color: #212529;
+}
+#about .bio {
+  margin-bottom: 2rem;
+}
+#about .contact-me {
+  margin-top: 2rem;
+}
+#about #technologies-box {
+  padding-top: 2rem;
+}
+#about #technologies-box .card {
   cursor: default;
   transition: 0.5s;
 }
-#technologies-box .card:hover {
+#about #technologies-box .card:hover {
   box-shadow: 0 0 0.5rem 0.25rem #fff176;
   border-color: #fff;
 }
-#technologies-box .technology-item {
+#about #technologies-box .technology-item {
   height: 3.25rem;
   margin-bottom: 1rem;
 }
-#technologies-box .technology-logo {
+#about #technologies-box .technology-logo {
   height: 2rem;
   margin: 0.625rem 0;
 }
-#technologies-box .technology-name {
+#about #technologies-box .technology-name {
   text-align: left;
   font-size: 1rem;
   margin: 0.4rem 0 0.15rem;
 }
-#technologies-box .progress {
+#about #technologies-box .progress {
   height: 0.75rem;
   width: calc(100% - 1rem);
   border-radius: 0.1rem;
 }
-#technologies-box .progress .progress-bar {
+#about #technologies-box .progress .progress-bar {
   width: 0;
   background-color: #fff176;
   border-radius: 0.1rem;
