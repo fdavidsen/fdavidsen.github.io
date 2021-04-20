@@ -82,11 +82,11 @@ $.ajax({
 
     // index.html
     for (let i = 0; i < 6; i++) {
-      let item = result[i];
+      const item = result[i];
       $('.portfolio #main .row').append(`
         <div class="col-lg-4 col-sm-6">
           <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal${ item.id }">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolio-modal-${ item.id }">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content text-center">
                   <div class="portfolio-caption-heading">${ item.name }</div>
@@ -105,7 +105,7 @@ $.ajax({
       $('.portfolio #portfolio .row').append(`
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal${ item.id }">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolio-modal-${ item.id }">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fas fa-plus fa-3x"></i>
@@ -122,14 +122,20 @@ $.ajax({
       `);
       
       let previewButton = '';
-      let previewProject = `<img class="img-fluid d-block mx-auto" src="${ item.picture }" alt="${ item.name }">`;
+      let previewProject = `
+        <div class="shadow-wrapper">
+          <div class="frame">
+            <img class="img-fluid d-block mx-auto" src="${ item.picture }" alt="${ item.name }">
+          </div>
+        </div>
+      `;
 
-      if (item.preview != null) {
+      if (item.preview !== null) {
         previewButton = `
           <br class="break">
           <a class="btn btn-primary btn-preview" href="${ item.preview }" target="_blank">
-            <i class="fas fa-globe mr-2"></i>
-            Project Preview
+            <i class="fas fa-eye mr-2"></i>
+            Preview
           </a>
         `;
 
@@ -137,7 +143,7 @@ $.ajax({
       }
 
       $('#portfolio-modal').append(`
-        <div class="portfolio-modal modal fade" id="portfolioModal${ item.id }" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolio-modal-${ item.id }" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="close-modal" data-dismiss="modal">
@@ -157,7 +163,7 @@ $.ajax({
                       </ul>
                       <a class="btn btn-dark" href="${ item.github }" target="_blank">
                         <i class="fab fa-github mr-2"></i>
-                        GitHub
+                        Source Code
                       </a>
                       ${ previewButton }
                     </div>

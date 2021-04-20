@@ -24,10 +24,6 @@
 		"percentage": "45"
 	},
 	{
-		"name": "Flask",		
-		"percentage": "40"
-	},
-	{
 		"name": "HTML",		
 		"percentage": "90"
 	},
@@ -74,9 +70,5 @@
 	{
 		"name": "REST API",		
 		"percentage": "60"
-	},
-	{
-		"name": "PWA",		
-		"percentage": "30"
 	}
 ]

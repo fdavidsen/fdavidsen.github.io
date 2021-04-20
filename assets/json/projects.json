@@ -1,6 +1,6 @@
 [
 	{
-		"id": 9,
+		"id": 7,
 		"name": "Album of High School Memories",
 		"category": "Web Development",
 		"picture": "https://drive.google.com/uc?export=view&id=1Mo7gmUzXgwCBBGxw_HOYyEPnXL8goxzU",
@@ -11,18 +11,7 @@
 		"preview": "https://fdavidsen.github.io/five/"
 	},
 	{
-		"id": 8,
-		"name": "Group Projects",
-		"category": "Data Science",
-		"picture": "https://cdn.pixabay.com/photo/2015/07/27/08/10/monitor-862116_960_720.jpg",
-		"technologies": "Scikit-learn, Pandas",
-		"author": "Frederic Davidsen et al.",
-		"description": "Work on different dataset to improve our skill and experience.",
-		"github": "https://github.com/daye-oa/Data-Science-Projects",
-		"preview": null
-	},
-	{
-		"id": 7,
+		"id": 6,
 		"name": "Personal Projects",
 		"category": "Data Science",
 		"picture": "https://cdn.pixabay.com/photo/2017/06/04/20/23/binary-2372130_960_720.jpg",
@@ -33,7 +22,7 @@
 		"preview": null
 	},
 	{
-		"id": 6,
+		"id": 5,
 		"name": "Current Weather",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/current-weather/master/static/assets/preview.png",
@@ -44,7 +33,7 @@
 		"preview": "https://current-weather-fd.herokuapp.com/"
 	},
 	{
-		"id": 5,
+		"id": 4,
 		"name": "Movies Search",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/movies-search/master/img/preview.jpg",
@@ -55,7 +44,7 @@
 		"preview": "https://fdavidsen.github.io/movies-search/"
 	},
 	{
-		"id": 4,
+		"id": 3,
 		"name": "Company Profile",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/company-profile/master/img/preview.jpg",
@@ -66,7 +55,7 @@
 		"preview": "https://fdavidsen.github.io/company-profile/"
 	},
 	{
-		"id": 3,
+		"id": 2,
 		"name": "Online Shop",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/online-shop/master/public/img/preview.png",
@@ -74,17 +63,6 @@
 		"author": "Frederic Davidsen",
 		"description": "Website to manage creation and modification of online shop's contents that support multiple admins. It helps an online shop to maintain its products while customers are easy to look for certain products there. Customers are unnecessary to sign in to give a like to certain products.",
 		"github": "https://github.com/fdavidsen/online-shop",
-		"preview": null
-	},
-	{
-		"id": 2,
-		"name": "Covid-19 EDA",
-		"category": "Data Science",
-		"picture": "https://cdn.pixabay.com/photo/2020/06/17/06/11/virus-5308335_960_720.jpg",
-		"technologies": "Scikit-learn, Pandas, Matplotlib, Altair",
-		"author": "Frederic Davidsen et al.",
-		"description": "Introduction to the 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE and explore it using some foundational packages in the Scientific Python Data Science stack.",
-		"github": "https://github.com/boratonAJ/WQU-ML_PROJECT",
 		"preview": null
 	},
 	{
