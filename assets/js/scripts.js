@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
  */
 (function($) {
-  'use strict'; // Start of use strict
+  'use strict';
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function() {
@@ -52,7 +52,7 @@
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-})(jQuery); // End of use strict
+})(jQuery);
 
 
 
@@ -112,7 +112,7 @@ $(function() {
   var currentHash = '#';
   var blocksArr = $('section');
 
-  $(document).scroll(function() {
+  $(window).on('scroll', function() {
     var currentTop = window.pageYOffset / 1;
 
     for (var i = 0; i < blocksArr.length; i++) {
@@ -139,11 +139,11 @@ $('.tabs-icon').on('click', 'li', function() {
   let hidden = 0;
 
   $('.portfolio #portfolio .row').children().each(function() {
-    if (tab == 'all') {
+    if (tab === 'all') {
       $(this).fadeIn();
     } else {
       const type = $(this).find('.portfolio-caption-subheading').html().toLowerCase();
-      if (type == tab) {
+      if (type === tab) {
         $(this).fadeIn();
       } else {
         $(this).hide();
@@ -165,3 +165,6 @@ $(window).on('load scroll', function() {
     if (bottomOfWindow > bottomOfObject)    $(this).css('width', percentage + '%');
   });
 });
+
+// Automatically update copyright year
+$('#copyright-year').html(new Date().getFullYear());
