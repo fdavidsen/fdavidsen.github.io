@@ -10454,10 +10454,6 @@ header.masthead .masthead-heading {
   font-style: italic;
   margin-bottom: 1.5rem;
 }
-.portfolio-modal .modal-content ul.list-inline,
-.portfolio-modal .modal-content .shadow-wrapper {
-  margin-bottom: 3rem;
-}
 .portfolio-modal .close-modal {
   position: absolute;
   top: 1.5rem;

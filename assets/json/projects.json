@@ -1,23 +1,31 @@
 [
 	{
+		"id": 8,
+		"name": "Birthday Page",
+		"category": "Web Development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Birthday%20Page/assets/img/preview.png",
+		"technologies": ["HTML", "CSS", "jQuery"],
+		"description": "An online birthday page that resembles an ordinary birthday card. But this one allows you to put 6 beautiful and memorable pictures together, this feature could help you and your birthday friends build deeper connections.",
+		"github": "https://github.com/fdavidsen/Simple-Web-Development-Projects/tree/master/Birthday%20Page",
+		"preview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Birthday%20Page"
+	},
+	{
 		"id": 7,
 		"name": "Album of High School Memories",
 		"category": "Web Development",
-		"picture": "https://drive.google.com/uc?export=view&id=1Mo7gmUzXgwCBBGxw_HOYyEPnXL8goxzU",
-		"technologies": "Bootstrap, jQuery",
-		"author": "Frederic Davidsen",
-		"description": "Album of my high school memories",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/five/master/assets/img/preview.png",
+		"technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+		"description": "This is my high school class memorial album, all our memories are immortalized here! You can get acquainted with all the members of my class here, besides that there are also our photos and videos.",
 		"github": "https://github.com/fdavidsen/five",
 		"preview": "https://fdavidsen.github.io/five/"
 	},
 	{
 		"id": 6,
-		"name": "Personal Projects",
+		"name": "Personal Data Science Projects",
 		"category": "Data Science",
-		"picture": "https://cdn.pixabay.com/photo/2017/06/04/20/23/binary-2372130_960_720.jpg",
-		"technologies": "Python, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn",
-		"author": "Frederic Davidsen",
-		"description": "This is a collection of my simple personal projects. I made them for fun and learning purposes.",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Personal-Data-Science-Projects/master/Wine%20Quality%20Prediction/preview.png",
+		"technologies": ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+		"description": "This is a collection of my data science projects that I create for fun and learning purposes. I perform exploratory data analysis, model selection, and hyperparameter tuning here!",
 		"github": "https://github.com/fdavidsen/Personal-Data-Science-Projects",
 		"preview": null
 	},
@@ -26,9 +34,8 @@
 		"name": "Current Weather",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/current-weather/master/static/assets/preview.png",
-		"technologies": "Bootstrap, Flask, REST API",
-		"author": "Frederic Davidsen",
-		"description": "Tells you what's the weather currently like. There is additional information about the weather, coordinates of the city, and wind condition.",
+		"technologies": ["HTML", "CSS", "Bootstrap", "Flask", "REST API"],
+		"description": "If you want to know how the weather is like today, this is the place for you! This page will tell you today's weather prediction. Apart from that, it will inform you about the weather, city coordinates, and wind conditions.",
 		"github": "https://github.com/fdavidsen/current-weather",
 		"preview": "https://current-weather-fd.herokuapp.com/"
 	},
@@ -36,44 +43,40 @@
 		"id": 4,
 		"name": "Movies Search",
 		"category": "Web Development",
-		"picture": "https://raw.githubusercontent.com/fdavidsen/movies-search/master/img/preview.jpg",
-		"technologies": "Materialize, jQuery, REST API",
-		"author": "Frederic Davidsen",
-		"description": "Pulls out 10 movies on every search and check out the details of each movie. The details cover the plot, actors, director, and many others.",
-		"github": "https://github.com/fdavidsen/movies-search",
-		"preview": "https://fdavidsen.github.io/movies-search/"
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Movies%20Search/img/preview.png",
+		"technologies": ["HTML", "CSS", "JavaScript", "Materialize", "jQuery", "REST API"],
+		"description": "If you love movie, this is the right place for you! This page will pull out 10 movies on every search, you can also check the details of every movie there. The details cover the plot, actors, director, and many others.",
+		"github": "https://github.com/fdavidsen/Simple-Web-Development-Projects/tree/master/Movies%20Search",
+		"preview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Movies%20Search"
 	},
 	{
 		"id": 3,
 		"name": "Company Profile",
 		"category": "Web Development",
-		"picture": "https://raw.githubusercontent.com/fdavidsen/company-profile/master/img/preview.jpg",
-		"technologies": "Materialize",
-		"author": "Frederic Davidsen",
-		"description": "Simple design and light-weight webpage for a company profile. It helps your company to exhibit its achievement i.e. portfolio, clients.",
-		"github": "https://github.com/fdavidsen/company-profile",
-		"preview": "https://fdavidsen.github.io/company-profile/"
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Company%20Profile/img/preview.png",
+		"technologies": ["HTML", "CSS", "JavaScript", "Materialize"],
+		"description": "Simple design and lightweight web page for company profiles. This page helps readers to understand how your business works. It also can give you the opportunity to inform the market about your business and what you have to offer to help them. This page has description of the business. service description, client, client portfolio, and contact form. You can include more items if needed.",
+		"github": "https://github.com/fdavidsen/Simple-Web-Development-Projects/tree/master/Company%20Profile",
+		"preview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Company%20Profile"
 	},
 	{
 		"id": 2,
 		"name": "Online Shop",
 		"category": "Web Development",
 		"picture": "https://raw.githubusercontent.com/fdavidsen/online-shop/master/public/img/preview.png",
-		"technologies": "Bootstrap, jQuery, CodeIgniter, MySQL",
-		"author": "Frederic Davidsen",
-		"description": "Website to manage creation and modification of online shop's contents that support multiple admins. It helps an online shop to maintain its products while customers are easy to look for certain products there. Customers are unnecessary to sign in to give a like to certain products.",
+		"technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "CodeIgniter", "MySQL"],
+		"description": "This web application will make it easier for you to manage your online store. The main page will show all your products with a short description, customers can also sort the products by recent posts or likes. In the admin page, you can manage, add, update or delete. Additionally, customers don't need to create any account to give a like your product. To make things easier, this app also supports multiple admins!",
 		"github": "https://github.com/fdavidsen/online-shop",
 		"preview": null
 	},
 	{
 		"id": 1,
-		"name": "Daily Horoscope",
+		"name": "Horoscope",
 		"category": "Web Development",
-		"picture": "https://raw.githubusercontent.com/fdavidsen/horoscope/master/assets/img/preview.jpg",
-		"technologies": "Bootstrap, jQuery, REST API, PWA",
-		"author": "Frederic Davidsen",
-		"description": "Daily horoscope of 12 Astrology Zodiac Signs with the addition of current week, month, and year.",
-		"github": "https://github.com/fdavidsen/horoscope",
-		"preview": "https://fdavidsen.github.io/horoscope/"
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Horoscope/assets/img/preview.png",
+		"technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "REST API", "PWA"],
+		"description": "Read today's daily horoscope for all the zodiac signs on this page. There are additional horoscopes for this week, month and year!",
+		"github": "https://github.com/fdavidsen/Simple-Web-Development-Projects/tree/master/Horoscope",
+		"preview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Horoscope"
 	}
 ]

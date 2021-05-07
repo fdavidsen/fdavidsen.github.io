@@ -120,10 +120,16 @@ $.ajax({
           </div>
         </div>
       `);
+
+      // Modals
+      let technologyUsed = '';
+      item.technologies.forEach(function(item) {
+        technologyUsed += `<span class="badge badge-secondary mx-1 px-2">${ item }</span>`;
+      });
       
       let previewButton = '';
       let previewProject = `
-        <div class="shadow-wrapper">
+        <div class="shadow-wrapper mb-5">
           <div class="frame">
             <img class="img-fluid d-block mx-auto" src="${ item.picture }" alt="${ item.name }">
           </div>
@@ -155,12 +161,12 @@ $.ajax({
                     <div class="modal-body">
                       <h2 class="text-uppercase">${ item.name }</h2>
                       <p class="item-intro text-muted">${ item.category }</p>
+
                       ${ previewProject }
-                      <p>${ item.description }</p>
-                      <ul class="list-inline">
-                        <li>Technologies: ${ item.technologies }</li>
-                        <li>Author: ${ item.author }</li>
-                      </ul>
+
+                      <p class="mb-4">${ item.description }</p>
+                      <div class="technology-used mb-5">${ technologyUsed }</div>
+
                       <a class="btn btn-dark" href="${ item.github }" target="_blank">
                         <i class="fab fa-github mr-2"></i>
                         Source Code
