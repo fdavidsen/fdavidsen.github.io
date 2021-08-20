@@ -1,0 +1,385 @@
+body {
+  font-family: "Roboto Slab";
+}
+::selection {
+  background: #fed136;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #fed136;
+  text-shadow: none;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+.section-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.form-control:focus {
+  border-color: #ffeeb5;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
+  transition: 0.2s;
+}
+.btn-custom {
+  color: #212529;
+  background-color: #ffca28;
+  border-radius: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.75rem;
+  transition: 0.2s ease-in;
+}
+.btn-custom:hover {
+  color: #212529;
+  background-color: transparent;
+  border-color: #fed136;
+}
+.btn-custom:focus {
+  color: #21252A;
+  background-color: transparent;
+  border-color: #fec503;
+  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+}
+footer {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  color: #a3a3a3;
+  background-color: #212529;
+  text-align: center;
+  margin-top: 6rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+footer.footer-transparent {
+  background-color: transparent;
+  margin-top: 7.5rem;
+  padding-bottom: 5rem;
+}
+
+
+
+nav.navbar {
+  background-color: #212529;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+nav.navbar .navbar-toggler {
+  font-family: Montserrat;
+  font-size:  0.5rem;
+  color: #21252A;
+  background-color: #fed136;
+  border: 0;
+  padding: 0.5rem;
+}
+nav.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav.navbar .navbar-nav .nav-link {
+  font-family: Montserrat;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.0625rem;
+}
+nav.navbar .navbar-nav .nav-link.active,
+nav.navbar .navbar-nav .nav-link:hover {
+  color: #fed136;
+}
+nav.navbar-transparent {
+  background-color: transparent;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+nav.navbar-shrink {
+  background-color: #212529;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media (max-width: 400px) {
+  nav.navbar .navbar-toggler {
+    padding: 0.625rem;
+    font-size: 0.625rem;
+  }
+  nav.navbar .navbar-brand img {
+    height: 1.25rem;
+  }
+}
+@media (min-width: 400px) {
+  nav.navbar .navbar-toggler {
+    padding: 0.625rem;
+    font-size: 0.625rem;
+  }
+  nav.navbar .navbar-brand img {
+    height: 1.5rem;
+  }
+}
+@media (min-width: 460px) {
+  nav.navbar .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+  nav.navbar .navbar-brand img {
+    height: 1.5rem;
+  }
+}
+nav.navbar .nav-link {
+  margin-right: 1rem;
+}
+nav.navbar .nav-link:last-child {
+  margin-right: 0;
+}
+
+
+
+#masthead {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+}
+#masthead .masthead-avatar {
+  width: 15rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin-bottom: 1.25rem;
+}
+#masthead .masthead-heading {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+#masthead .masthead-subheading {
+  font-family: "Droid Serif";
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+#masthead .masthead-subheading .text-custom {
+  color: #fed136;
+  text-decoration: none;
+}
+/* Cursor on typing animation */
+#masthead .masthead-subheading span > .wrap {
+  border-right: 0.08rem solid;
+  padding-right: 0.25rem;
+  animation: animated-cursor 600ms steps(30, end) infinite;
+}
+@keyframes animated-cursor{
+  from { border-right-color: #666; }
+  to { border-right-color: transparent; }
+}
+
+
+
+.project {
+  position: relative;
+  height: 15.5rem;
+  width: 100%;
+}
+.project .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: 0.25rem;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s;
+}
+.project:hover .overlay {
+  opacity: 0.85;
+}
+.project .project-name {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.project img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+#latest-project {
+  padding-top: 5rem;
+}
+#latest-project .btn-custom {
+  margin-top: 3rem;
+  padding: 0.35rem 1rem;
+}
+
+#portfolio {
+  padding-top: 8rem;
+}
+#portfolio .btn-dark {
+  color: #a3a3a3;
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: none;
+  transition: 0.2s;
+  padding: 0.5rem 1.25rem;
+}
+@media (max-width: 450px) {
+  #portfolio .btn-dark {
+    font-size: 0.65rem;
+    padding: 0.4rem 1.15rem;
+  }
+}
+@media (max-width: 400px) {
+  #portfolio .btn-dark {
+    font-size: 0.5rem;
+    padding: 0.35rem 1rem;
+  }
+}
+#portfolio .btn-dark:hover {
+  color: #fff;
+}
+#portfolio .btn-dark.active {
+  color: #fed136;
+}
+#portfolio .btn-dark:first-child {
+  border-radius: 30px 0 0 30px;
+}
+#portfolio .btn-dark:nth-child(2) {
+  border-radius: 0;
+}
+#portfolio .btn-dark:last-child {
+  border-radius: 0 30px 30px 0;
+}
+#portfolio .project-count {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+
+
+#about {
+  padding-top: 7rem;
+}
+#about .highlight {
+  color: #21252A;
+  background-color: #fff176;
+  text-decoration: none;
+}
+#about .highlight:hover {
+  color: #21252A;
+  background-color: #fed136;
+}
+
+#technology {
+  margin-bottom: 5rem;
+}
+#technology .card {
+  height: 3.5rem;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+}
+#technology .logo {
+  max-height: 2.25rem;
+  max-width: 100%;
+}
+#technology .name {
+  font-size: 1rem;
+  margin-top: -0.25rem;
+}
+#technology .progress {
+  height: 0.75rem;
+  width: calc(100% - 1rem);
+  border-radius: 0.1rem;
+}
+#technology .progress .progress-bar {
+  width: 0;
+  background-color: #fff176;
+  border-radius: 0.1rem;
+  color: #6d4c41;
+  font-size: 0.75rem;
+  font-weight: 900;
+  transition: 1s;
+}
+
+#service img {
+  width: 35%;
+}
+
+
+
+#contact {
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10rem;
+}
+#contact input,
+#contact textarea {
+  color: #eee;
+  background-color: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  font-size: 0.75rem;
+  padding: 0.625rem;
+}
+#contact ::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #ced4da;
+}
+#contact :-moz-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #ced4da;
+}
+#contact ::-moz-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #ced4da;
+}
+#contact :-ms-input-placeholder {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #ced4da;
+}
+#contact .btn-custom {
+  border-radius: 0.25rem;
+}
+#contact .btn-custom:hover,
+#contact .btn-custom:focus {
+  color: #fed136;
+}
+#contact .col-lg-4 {
+  color: #eee;
+  background-color: rgba(20, 20, 20, 0.5);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 0.25rem;
+  text-align: center;
+  padding: 3.5rem;
+}
+#contact .col-lg-4 h6 {
+  color: #ced4da;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+#contact .col-lg-4 p {
+  font-size: 15px;
+}
+#contact .col-lg-4 .btn-dark {
+  border-radius: 50%;
+}

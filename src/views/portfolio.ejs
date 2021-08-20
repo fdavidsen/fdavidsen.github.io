@@ -1,0 +1,39 @@
+<%- include partials/header %>
+
+
+
+<section id="portfolio">
+  <div class="container">
+    <div class="text-center">
+      <div class="btn-group mb-3" role="group">
+        <a href="#" class="btn btn-dark active" data-filter="all">ALL</a>
+        <a href="#" class="btn btn-dark" data-filter="web-development">WEB DEVELOPMENT</a>
+        <a href="#" class="btn btn-dark" data-filter="data-science">DATA SCIENCE</a>
+      </div>
+
+      <div class="mb-5">
+        <p class="fst-italic mb-0">Total</p>
+        <h4 class="project-count">Calculating...</h4>
+      </div>
+    </div>
+
+    <div class="row filter-container">
+      <% Object.values(htmlWebpackPlugin.options.data.projects).forEach(item => { %>
+        <div class="col-lg-4 col-md-6 col-sm-6 pb-3 filtr-item" data-category="<%= item.category %>">
+          <div class="project">
+            <a href="<%= item.livePreview %>">
+              <div class="overlay">
+                <div class="project-name"><%= item.name %></div>
+              </div>
+            </a>
+            <img src="<%= item.picture %>" alt="<%= item.name %>">
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+
+
+<%- include partials/footer %>

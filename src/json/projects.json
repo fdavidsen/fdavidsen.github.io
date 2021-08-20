@@ -1,0 +1,62 @@
+[
+	{
+		"name": "FD Code Studio",
+		"category": "web-development",
+		"picture": "img/fdcodestudio-preview.png",
+		"livePreview": "https://fdcodestudio.github.io"
+	},
+	{
+		"name": "Evelyn Belinda Photography",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/PhotoCraft/master/assets/img/preview.png",
+		"livePreview": "http://evelynbelinda.rf.gd"
+	},
+	{
+		"name": "Birthday Page",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Birthday%20Page/assets/img/preview.png",
+		"livePreview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Birthday%20Page"
+	},
+	{
+		"name": "Album of High School Memories",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/five/master/assets/img/preview.png",
+		"livePreview": "https://fdavidsen.github.io/five"
+	},
+	{
+		"name": "Personal Data Science Projects",
+		"category": "data-science",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Personal-Data-Science-Projects/master/Wine%20Quality%20Prediction/preview.png",
+		"livePreview": "https://github.com/fdavidsen/Personal-Data-Science-Projects"
+	},
+	{
+		"name": "Current Weather",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/current-weather/master/static/assets/preview.png",
+		"livePreview": "https://current-weather-fd.herokuapp.com/"
+	},
+	{
+		"name": "Movies Search",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Movies%20Search/img/preview.png",
+		"livePreview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Movies%20Search"
+	},
+	{
+		"name": "Company Profile",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Company%20Profile/img/preview.png",
+		"livePreview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Company%20Profile"
+	},
+	{
+		"name": "Online Shop",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/online-shop/master/public/img/preview.png",
+		"livePreview": "https://github.com/fdavidsen/online-shop"
+	},
+	{
+		"name": "Horoscope",
+		"category": "web-development",
+		"picture": "https://raw.githubusercontent.com/fdavidsen/Simple-Web-Development-Projects/master/Horoscope/assets/img/preview.png",
+		"livePreview": "https://fdavidsen.github.io/Simple-Web-Development-Projects/Horoscope"
+	}
+]

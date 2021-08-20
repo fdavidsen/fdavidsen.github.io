@@ -1,0 +1,113 @@
+<%- include partials/header %>
+
+
+
+<section id="about">
+  <div class="container">
+    <h2 class="section-heading d-md-none">About Me</h2>
+    
+    <div class="row align-items-center justify-content-center mb-5">
+      <div class="col-8 d-md-none p-3">
+        <img src="img/fd/about-sm.png" class="w-100" alt="Frederic Davidsen">
+      </div>
+      <div class="col-md-5 d-none d-md-inline p-3">
+        <img src="img/fd/about-lg.png" class="w-100" alt="Frederic Davidsen">
+      </div>
+
+      <div class="col-md-7 p-3">
+        <h2 class="d-none d-md-block text-center mb-4">About Me</h2>
+        
+        <p>Hello, I am Frederic Davidsen. Welcome to my profile! I am a junior data scientist and web developer. I have worked on several personal <a href="portfolio.html" class="highlight">projects</a> for fun and learning purposes. I have intermediate technical knowledge of the latest <a href="#technology" class="highlight js-scroll-trigger">technologies</a> and the ability to explain programming concepts to non-technical audiences.</p>
+        <p>I have developed good communication, self-organizing, and <a href="#service" class="highlight js-scroll-trigger">technical skills</a>, being able to work with minimal supervision and completing tasks on my own. Let me know what you need. I will be glad to help you!</p>
+        
+        <div class="text-center mt-5">
+          <a href="contact.html" class="btn btn-custom">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="container">
+    <h2 class="section-heading">Used Technologies</h2>
+
+    <div class="row justify-content-center">
+      <% Object.values(htmlWebpackPlugin.options.data.technologies).forEach(item => { %>
+        <% const logo = item.name.toLowerCase().split(' ').join('-') + '.png' %>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="card border-0">
+            <div class="card-body py-0">
+              <div class="row align-items-center h-100">
+                <div class="col-3 text-center">
+                  <img src="img/technologies/<%= logo %>" class="logo" alt="<%= item.name %>">
+                </div>
+                <div class="col-9">
+                  <h5 class="name"><%= item.name %></h5>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="<%= item.percentage %>" aria-valuemin="0" aria-valuemax="100"><%= item.percentage %>%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section id="service">
+  <div class="container">
+    <h2 class="section-heading">My Services</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3">
+        <div class="card border-0 py-2">
+          <div class="card-body text-center">
+            <img src="img/services/clean-code.svg" alt="Clean Code">
+            <h5 class="mt-2 mb-3">Clean Code</h5>
+            <p class="text-start mb-0">Clean code can be read and enhanced by a developer other than its original author.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 py-2">
+          <div class="card-body text-center">
+            <img src="img/services/debugging.svg" alt="Debugging">
+            <h5 class="mt-2 mb-3">Debugging</h5>
+            <p class="text-start mb-0">Process to analyze errors in a software code that can cause it to behave unexpectedly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 py-2">
+          <div class="card-body text-center">
+            <img src="img/services/problem-solving.svg" alt="Problem Solving">
+            <h5 class="mt-2 mb-3">Problem Solving</h5>
+            <p class="text-start mb-0">Using generic or ad hoc methods in an orderly manner to find solutions to problems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="card border-0 py-2">
+          <div class="card-body text-center">
+            <img src="img/services/responsive-design.svg" alt="Responsive Design">
+            <h5 class="mt-2 mb-3">Responsive Design</h5>
+            <p class="text-start mb-0">Approach to make web pages render well on a variety of devices or screen sizes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <small class="text-muted float-end">Icons made by <a class="text-dark text-decoration-none" href="https://www.freepik.com" title="Freepik">Freepik</a> from <a class="text-dark text-decoration-none" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></small>
+  </div>
+</section>
+
+
+
+<%- include partials/footer %>

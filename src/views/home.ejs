@@ -1,0 +1,47 @@
+<%- include partials/header %>
+
+
+
+<section id="masthead" style="background-image: url(img/background/home.jpg);">
+  <div class="container">
+    <img src="img/fd/masthead.jpg" class="masthead-avatar" alt="Frederic Davidsen">
+    <div class="masthead-heading">Frederic Davidsen</div>
+    <div class="masthead-subheading fst-normal mb-2">
+      Founder of <a href="https://fdcodestudio.github.io/" class="text-custom">FD Code Studio</a>
+    </div>
+    <div class="masthead-subheading">
+      <span>Web Developer | Data Scientist</span>
+    </div>
+  </div>
+</section>
+
+<section id="latest-project">
+  <div class="container">
+    <h2 class="section-heading">Latest Projects</h2>
+    
+    <div class="row justify-content-center">
+      <% const projects = Object.values(htmlWebpackPlugin.options.data.projects) %>
+      
+      <% for (let i = 0; i < 6; i++) { %>
+        <div class="col-lg-4 col-md-6 col-sm-6 pb-2">
+          <div class="project">
+            <a href="<%= projects[i].livePreview %>">
+              <div class="overlay">
+                <div class="project-name"><%= projects[i].name %></div>
+              </div>
+            </a>
+            <img src="<%= projects[i].picture %>" class="w-100" alt="<%= projects[i].name %>">
+          </div>
+        </div>
+      <% } %>
+    </div>
+
+    <div class="text-center">
+      <a href="portfolio.html" class="btn btn-custom">View all projects</a>
+    </div>
+  </div>
+</section>
+
+
+
+<%- include partials/footer %>
