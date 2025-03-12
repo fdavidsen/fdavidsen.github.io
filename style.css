@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Changed to reverse for mobile */
+    min-height: 100vh;
+}
+
+/* Right side - Dark background with computer screen */
+.right-side-image {
+    position: relative;
+    background-color: #000;
+    min-height: 50vh;
+    /* Increased for better mobile view */
+}
+
+.right-side-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('image.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+/* Left side - Orange top and white bottom */
+.left-side-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.orange-section {
+    background-color: rgb(255, 143, 0);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.orange-bar {
+    background-color: rgba(255, 143, 0, 0.8);
+    color: white;
+    padding: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+/* White section with course information */
+.white-section {
+    background-color: white;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.intro {
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.program-list {
+    margin-bottom: 1.5rem;
+}
+
+.program-item {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.program-item span {
+    margin-right: 0.5rem;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.list-item {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.contact {
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.link {
+    color: rgb(255, 143, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.fw-bold {
+    font-weight: 500;
+}
+
+.text-margin {
+    margin-bottom: 1rem;
+}
+
+.emoji {
+    font-size: 1.2em;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-side-content {
+        width: 50%;
+        order: 1;
+    }
+
+    .right-side-image {
+        width: 50%;
+        min-height: 100vh;
+        order: 2;
+    }
+
+    .right-side-image::before {
+        background-position: center 70%;
+        /* Adjusted for desktop view */
+    }
+}
+
+.program-item {
+    margin-bottom: 1.5rem;
+}
+
+.program-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-icon {
+    cursor: pointer;
+    color: rgb(255, 143, 0);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.info-icon:hover {
+    background-color: rgb(255, 143, 0);
+    color: white;
+}
+
+/* Modal styles */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    max-width: 90%;
+    width: 500px;
+    max-height: 90vh;
+    position: relative;
+    animation: modalAppear 0.3s ease;
+}
+
+.modal-content {
+    max-height: calc(90vh - 6rem);
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: rgb(255, 143, 0);
+    border-radius: 3px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    color: rgb(255, 143, 0);
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* WhatsApp FAB */
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-icon {
+    width: 60%;
+    height: 60%;
+}
+
+.whatsapp-fab:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-fab::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #25D366;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: pulse 2s infinite;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    70% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .whatsapp-fab {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .whatsapp-fab {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-fab {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
